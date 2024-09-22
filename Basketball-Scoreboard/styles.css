@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Timer;
+  src: url(Font/CursedTimerUlil-Aznm.ttf);
+}
+
+body {
+  font-family: monospace;
+  background-image: url(Image/engin-akyurt-sYpy59mZaxQ-unsplash.jpg);
+  background-size: cover;
+}
+
+button {
+  min-width: 2rem;
+  min-height: 2rem;
+  padding: 0.5rem;
+  background-color: black;
+  font-weight: bold;
+  font-family: Timer, sans-serif;
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+.scoreboard-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #013220;
+  max-width: 60%;
+  margin: 3rem auto;
+  border: 0.8rem solid white;
+  border-radius: 16px;
+}
+
+.board-section {
+  flex-direction: column;
+  margin: 0 1rem;
+  text-align: center;
+  width: 45%;
+}
+
+.team-title {
+  color: white;
+  letter-spacing: 0.2rem;
+  text-indent: 0.2rem;
+  margin-bottom: 0.5rem;
+  font-size: 3rem;
+  width: 100%;
+}
+
+.team-score {
+  color: #f94f6d;
+  font-size: 7rem;
+  background-color: black;
+  font-family: Timer, sans-serif;
+  padding-top: 1rem;
+  margin: 0 1rem 0.5rem 1rem;
+}
+
+.foul-title {
+  color: white;
+  letter-spacing: 0.1rem;
+  text-indent: 0.1rem;
+  margin-top: 3rem;
+  margin-bottom: 0.3rem;
+  font-size: 2rem;
+}
+
+.foul-number {
+  color: orange;
+  font-size: 5rem;
+  background-color: black;
+  font-family: Timer, sans-serif;
+  padding-top: 0.8rem;
+  margin: 0 1rem 0.5rem 1rem;
+}
+
+.button-container {
+  margin: 1rem 0;
+}
+
+@media (max-width: 900px) {
+  .scoreboard-container {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .board-section {
+    width: 100%;
+    margin: 0;
+  }
+
+  .board-section:last-child {
+    margin-top: 4rem;
+  }
+}

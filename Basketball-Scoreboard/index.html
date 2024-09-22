@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Basketball-Scoreboard</title>
+  </head>
+  <body>
+    <main class="scoreboard-container">
+      <section class="board-section">
+        <h2 class="team-title">HOME</h2>
+        <div class="score-container">
+          <h3 id="home-score" class="team-score">0</h3>
+          <div class="button-container">
+            <button class="btn" onclick="incrementScore('home', 1)">+1</button>
+            <button class="btn" onclick="incrementScore('home', 2)">+2</button>
+            <button class="btn" onclick="incrementScore('home', 3)">+3</button>
+          </div>
+          <div class="button-container">
+            <button class="btn" onclick="incrementScore('home', -1)">-1</button>
+            <button class="btn" onclick="incrementScore('home', -2)">-2</button>
+            <button class="btn" onclick="incrementScore('home', -3)">-3</button>
+          </div>
+        </div>
+        <div class="foul-container">
+          <h2 class="foul-title">FOULS</h2>
+          <h3 id="home-fouls" class="foul-number">0</h3>
+          <div class="button-container">
+            <button class="btn" onclick="incrementFouls('home', 1)">+1</button>
+            <button class="btn" onclick="incrementFouls('home', 2)">+2</button>
+            <button class="btn" onclick="incrementFouls('home', 3)">+3</button>
+          </div>
+          <div class="button-container">
+            <button class="btn" onclick="incrementFouls('home', -1)">-1</button>
+            <button class="btn" onclick="incrementFouls('home', -2)">-2</button>
+            <button class="btn" onclick="incrementFouls('home', -3)">-3</button>
+          </div>
+        </div>
+      </section>
+      <section class="board-section">
+        <h2 class="team-title">GUEST</h2>
+        <div class="score-container">
+          <h3 id="guest-score" class="team-score">0</h3>
+          <div class="button-container">
+            <button class="btn" onclick="incrementScore('guest', 1)">+1</button>
+            <button class="btn" onclick="incrementScore('guest', 2)">+2</button>
+            <button class="btn" onclick="incrementScore('guest', 3)">+3</button>
+          </div>
+          <div class="button-container">
+            <button class="btn" onclick="incrementScore('guest', -1)">
+              -1
+            </button>
+            <button class="btn" onclick="incrementScore('guest', -2)">
+              -2
+            </button>
+            <button class="btn" onclick="incrementScore('guest', -3)">
+              -3
+            </button>
+          </div>
+        </div>
+        <div class="foul-container">
+          <h2 class="foul-title">FOULS</h2>
+          <h3 id="guest-fouls" class="foul-number">0</h3>
+          <div class="button-container">
+            <button class="btn" onclick="incrementFouls('guest', 1)">+1</button>
+            <button class="btn" onclick="incrementFouls('guest', 2)">+2</button>
+            <button class="btn" onclick="incrementFouls('guest', 3)">+3</button>
+          </div>
+          <div class="button-container">
+            <button class="btn" onclick="incrementFouls('guest', -1)">
+              -1
+            </button>
+            <button class="btn" onclick="incrementFouls('guest', -2)">
+              -2
+            </button>
+            <button class="btn" onclick="incrementFouls('guest', -3)">
+              -3
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
