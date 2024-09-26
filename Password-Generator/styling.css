@@ -49,6 +49,11 @@ button {
   font-size: 2rem;
   font-weight: bold;
 }
+
+button:hover {
+  opacity: 80%;
+}
+
 .password-container {
   width: 100%;
 }
